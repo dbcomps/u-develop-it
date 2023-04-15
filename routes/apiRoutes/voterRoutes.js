@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.router();
+const router = express.Router();
 const db = require('../../db/connection');
 const inputCheck = require('../../utils/inputCheck');
 
@@ -110,3 +110,5 @@ router.delete('/voter/:id', (req, res) => {
 		}
 	});
 });
+
+module.exports = router;
